@@ -21,7 +21,7 @@
 }
 
 
-.cards div {
+.cards .cards_icon {
     height: 3.1rem;
     width: 3.1rem;
     display: flex;
@@ -30,12 +30,13 @@
     background-color: #daf2e1;
     color: var(--green-color);
     padding: 0.7rem 0.8rem;
+    margin-bottom: 0.8rem;
     border-radius: 100%;
     font-size: 1.5rem;
     transition: all ease-in-out 0.3s;
 }
 
-.cards:hover div {
+.cards:hover .cards_icon {
     background-color: white;
     transition: all ease-in-out 0.3s;
 }
@@ -45,8 +46,7 @@
     color: var(--primary-color);
     font-weight: 500;
     font-size: 1.2rem;
-    display: block;
-    margin-top: 20px;
+    /* display: block; */
 }
 
 .cards a:hover {

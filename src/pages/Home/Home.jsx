@@ -4,6 +4,9 @@ import heroImage from '../../assets/img/hero.jpg'
 import Button1 from '../../components/Buttons/Button1';
 import Cards, { Cards2 } from '../../components/Cards/Cards';
 import { BsHddStack } from "react-icons/bs";
+import Bar from '../../components/Bar/Bar';
+import Cross, { Cross2 } from '../../components/Shapes/Cross';
+import Circle from '../../components/Shapes/Circle';
 
 
 const Home = () => {
@@ -16,12 +19,15 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="hero_content">
+                                <Circle />
                                 <h1>Secure IT Solutions for a more secure environment</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias nisi soluta ipsam omnis, accusamus ex ab fugit asperiores eligendi?</p>
+                                <Cross />
                                 <Button1 className='btn1' item='GET STARTED' />
                             </div>
                         </div>
                         <div className="col-lg-6">
+                            <Cross2 />
                             <img src={heroImage} alt="Error uploading" className='img-fluid' />
                         </div>
                     </div>
@@ -48,6 +54,7 @@ const Home = () => {
                         <div className="col-lg-6">
                             <div className="services_content">
                                 <h2>Cloud Hosting Services</h2>
+                                <Bar />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam perspiciatis ex porro enim modi sit numquam impedit molestias nam?</p>
 
                                 <div className="services_blocks">
@@ -106,6 +113,7 @@ const Home = () => {
                     <div className="row">
                         <div className="sections_head">
                             <h2>Our Features</h2>
+                            <Bar />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda incidunt repellendus! Ab aperiam nesciunt natus voluptates.</p>
                         </div>
                     </div>

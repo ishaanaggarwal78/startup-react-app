@@ -3,6 +3,7 @@
     --secondary-color: #4a6f8a;
     --green-color: #44ce6f;
     --grey-bg-color: #f7fafd;
+    --white-color: white;
 }
 
 /* ============================================= PRE-DEFINED ============================================= */
@@ -42,6 +43,7 @@
     padding-bottom: 1rem;
 }
 
+
 .hero_content p {
     color: var(--secondary-color);
     padding-bottom: 1rem;
@@ -49,6 +51,24 @@
 
 .hero_content .btn1 {
     transform: translate(0);
+}
+
+.hero_content .cross_shape {
+    position: absolute;
+    top: 70%;
+    left: 27%;
+}
+
+.hero_section .cross_shape2 {
+    position: absolute;
+    right: 20%;
+}
+
+.hero_content .circle_shape {
+    position: absolute;
+    top: 24%;
+    z-index: -10;
+    left: 2%;
 }
 
 /* ============================================= SERVICES ============================================= */
@@ -103,19 +123,23 @@
 
 .services_blocks .cards:hover div {
     background-color: transparent;
-    color: white;
+    color: var(--white-color);
 }
 
 /* ============================================= DESIGN & DEVELOPMENT ============================================= */
 
 .designDev {
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 /* ============================================= FEATURES ============================================= */
 
 .features {
     background-color: var(--grey-bg-color);
+}
+
+.features .bar {
+    margin-left: 40%;
 }
 
 .features .features_blocks {
