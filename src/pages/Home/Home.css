@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #0e314c;
+    --secondary-color: #4a6f8a;
+    --green-color: #44ce6f;
+    --grey-bg-color: #f7fafd;
+}
+
+/* ============================================= PRE-DEFINED ============================================= */
+
+.sections {
+    padding: 4rem 0;
+}
+
+.sections .sections_head {
+    text-align: center;
+    width: 50%;
+    margin-left: calc(50% - 25%);
+}
+
+.sections .sections_head p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+.sections .sections_head h2 {
+    color: var(--primary-color);
+}
+
+/* ============================================= HERO ============================================= */
+
+.hero_section {
+    padding-bottom: 2rem;
+}
+
+.hero_content {
+    padding-top: 6rem;
+}
+
+.hero_content h1 {
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.hero_content p {
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+}
+
+.hero_content .btn1 {
+    transform: translate(0);
+}
+
+/* ============================================= SERVICES ============================================= */
+
+
+.hosting_services h2 {
+    color: var(--primary-color);
+}
+
+.hosting_services p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.hosting_services {
+    background-color: var(--grey-bg-color);
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.services_blocks {
+    margin-top: 2.4rem;
+}
+
+.services_blocks .cards {
+    display: flex;
+    padding: 0.7rem 1rem;
+    align-items: center;
+    box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.125);
+    border-radius: 3px;
+}
+
+.services_blocks .cards:hover {
+    transform: translateY(-5px);
+}
+
+.services_blocks .cards p {
+    padding: 0;
+    padding-left: 0.8rem;
+    font-weight: 500;
+}
+
+.services_blocks .cards div {
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0;
+    height: 1rem;
+    width: 1rem;
+}
+
+.services_blocks .cards:hover div {
+    background-color: transparent;
+    color: white;
+}
+
+/* ============================================= DESIGN & DEVELOPMENT ============================================= */
+
+.designDev {
+    background-color: white;
+}
+
+/* ============================================= FEATURES ============================================= */
+
+.features {
+    background-color: var(--grey-bg-color);
+}
+
+.features .features_blocks {
+    margin-top: 1.7rem;
+}
+
+.features .features_blocks .cards2 {
+    margin-top: 1.2rem;
+}

@@ -1,0 +1,14 @@
+#root {
+    /* background-color: red; */
+    font-family: "Fira Sans", sans-serif;
+    /* font-weight: 200; */
+    font-style: normal;
+}
+
+nav .nav_logo h1 {
+    /* color: purple; */
+}
+
+h2 {
+    /* color: orange; */
+}

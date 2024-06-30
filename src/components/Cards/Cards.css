@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #0e314c;
+    --secondary-color: #4a6f8a;
+    --green-color: #44ce6f;
+}
+
+.cards {
+    background-color: white;
+    padding: 1.8rem 1.3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.125);
+    transition: all ease-in-out 0.4s;
+}
+
+.cards:hover {
+    /* background: linear-gradient(135deg, #23bdb8, #43e794); */
+    background-color: #2dd2a4;
+    /* background-color: #23bdb8; */
+    transition: all ease-in-out 0.4s;
+    transform: translateY(-10px);
+}
+
+
+.cards div {
+    height: 3.1rem;
+    width: 3.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #daf2e1;
+    color: var(--green-color);
+    padding: 0.7rem 0.8rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.cards:hover div {
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.cards a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 20px;
+}
+
+.cards a:hover {
+    text-decoration: underline;
+}
+
+.cards p {
+    font-size: 13px;
+    padding-top: 0.7rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--secondary-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.cards:hover p {
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.cards:hover a {
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+/* ============================================= CARDS 2 ============================================= */
+
+.cards2 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1.8rem 1.3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -6px rgba(0, 0, 0, 0.125);
+    transition: all ease-in-out 0.4s;
+}
+
+.cards2:hover {
+    /* background: linear-gradient(135deg, #23bdb8, #43e794); */
+    /* background-color: #2dd2a4; */
+    /* background-color: #23bdb8; */
+    transition: all ease-in-out 0.4s;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.125);
+}
+
+
+.cards2 .cards_icon {
+    height: 3.1rem;
+    width: 3.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #daf2e1;
+    color: var(--green-color);
+    padding: 0.7rem 0.8rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.cards2:hover .cards_icon {
+    /* background-color: white; */
+    transition: all ease-in-out 0.3s;
+}
+
+.cards2 a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    /* display: block; */
+}
+
+.cards2 a:hover {
+    color: var(--green-color);
+}
+
+.cards2 p {
+    font-size: 13px;
+    padding-top: 0.5rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--secondary-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.cards2:hover p {
+    /* color: white; */
+    transition: all ease-in-out 0.3s;
+}
+
+.cards2:hover a {
+    /* color: white; */
+    transition: all ease-in-out 0.3s;
+}
