@@ -1,0 +1,53 @@
+.main_bg {
+    position: relative;
+    z-index: 10;
+}
+
+/* ============================================= CROSS ============================================= */
+
+.cross_shape img {
+    position: absolute;
+    top: 350px;
+    left: 30%;
+    animation: cross 6s linear forwards infinite;
+    z-index: -1;
+}
+
+@keyframes cross {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================= CROSS 2 ============================================= */
+
+.cross_shape2 img {
+    position: absolute;
+    top: -30px;
+    right: 10%;
+    animation: cross 6s linear forwards infinite;
+    z-index: -1;
+}
+
+@keyframes cross {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================= CIRCLE ============================================= */
+
+.circle_shape .inner img {
+    position: absolute;
+    top: 0;
+    animation: circle 4s linear forwards infinite;
+    z-index: -10;
+    left: 30px;
+}
+
+
+@keyframes circle {
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
