@@ -2,6 +2,7 @@
     --primary-color: #0e314c;
     --secondary-color: #4a6f8a;
     --green-color: #44ce6f;
+    --primary-green: #2dd2a4;
 }
 
 .cards {
@@ -14,7 +15,7 @@
 
 .cards:hover {
     /* background: linear-gradient(135deg, #23bdb8, #43e794); */
-    background-color: #2dd2a4;
+    background-color: var(--primary-green);
     /* background-color: #23bdb8; */
     transition: all ease-in-out 0.4s;
     transform: translateY(-10px);

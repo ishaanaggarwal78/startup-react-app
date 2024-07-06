@@ -1,25 +1,18 @@
 import React from 'react'
 import './Home.css';
-import MainLogo from '../../assets/img/main-logo.png'
 import heroImage from '../../assets/img/hero.jpg'
 import Button1 from '../../components/Buttons/Button1';
 import Cards, { Cards2 } from '../../components/Cards/Cards';
 import { BsHddStack } from "react-icons/bs";
 import Bar from '../../components/Bar/Bar';
-import Carousel from '../../components/Carousel/Carousel';
 import Background from '../../components/Background/Background';
 import cross from '../../assets/img/cross-shape.svg'
 import cross2 from '../../assets/img/cross-shape.svg'
 import circle from '../../assets/img/circle-shape.png'
 
-import { MdOutlineEmail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { FiPhone } from "react-icons/fi";
-import { FiFacebook } from "react-icons/fi";
-import { RiTwitterXFill } from "react-icons/ri";
-import { IoLogoInstagram } from "react-icons/io5";
-import { FiLinkedin } from "react-icons/fi";
-import { NavLink } from 'react-router-dom';
+import MySwiperComponent from '../../components/Carousel/Carousel';
+import TeamCarousel from '../../components/Carousel/TeamCarousel';
+
 
 
 const Home = () => {
@@ -57,7 +50,6 @@ const Home = () => {
             </section>
 
             {/* ============================================ HOSTING SERVICES ============================================= */}
-
 
             <section className="hosting_services sections">
                 <div className="container">
@@ -124,7 +116,7 @@ const Home = () => {
                     <div className="row">
                         <div className="sections_head">
                             <h2>Our Features</h2>
-                            <Bar />
+                            <Bar className="heading_bar" />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda incidunt repellendus! Ab aperiam nesciunt natus voluptates.</p>
                         </div>
                     </div>
@@ -157,10 +149,9 @@ const Home = () => {
                     </div>
 
                     <div className="row">
-
                     </div>
                 </div>
-                <Carousel />
+                <TeamCarousel />
             </section>
 
             {/* ============================================ COUNTER ============================================= */}
@@ -228,74 +219,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className="works_carousel">
+                    <MySwiperComponent />
+                </div>
             </section>
 
             {/* ============================================ HEADING ============================================= */}
-
-            {/* <Background /> */}
-
-            {/* ============================================ FOOTER ============================================= */}
-
-            <footer>
-                <section className="footer sections">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-3">
-                                <div className="footer_first">
-                                    <img src={MainLogo} alt="" />
-                                    <span>Startup</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis numquam pariatur natus ab eaque soluta dolorem quo rerum hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eligendi!</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="footer_second">
-                                    <h5>Company</h5>
-                                    <ul className="footer_links">
-                                        <li><NavLink to="">About Us</NavLink></li>
-                                        <li><NavLink to="">Services</NavLink></li>
-                                        <li><NavLink to="">Features</NavLink></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-3">
-                                <h5>Support</h5>
-                                <ul className="footer_links">
-                                    <li><NavLink to="">FAQ's</NavLink></li>
-                                    <li><NavLink to="">Privacy Policy</NavLink></li>
-                                    <li><NavLink to="">Terms & Conditions</NavLink></li>
-                                    <li><NavLink to="">Team</NavLink></li>
-                                    <li><NavLink to="">Contact us</NavLink></li>
-                                </ul>
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="footer_fourth">
-                                    <h5>Address</h5>
-                                    <ul>
-                                        <li><IoLocationOutline />27 Division St, New York,<br /> NY, 10002, USA</li>
-                                        <li><MdOutlineEmail />Email: startp@gmail.com</li>
-                                        <li><FiPhone />Phone: <NavLink to="">+91 98494 44754</NavLink></li>
-                                    </ul>
-                                    <div className="social_links">
-                                        <div className="social">
-                                            <FiFacebook />
-                                        </div>
-                                        <div className="social">
-                                            <RiTwitterXFill />
-                                        </div>
-                                        <div className="social">
-                                            <IoLogoInstagram />
-                                        </div>
-                                        <div className="social">
-                                            <FiLinkedin />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </footer>
-
         </>
     )
 }

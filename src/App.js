@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/about/About'
 import Error from './pages/Error/Error'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -15,12 +16,13 @@ const App = () => {
         <>
             <BrowserRouter>
                 {/* {!hideNavbar && <Navbar />} */}
-                <Navbar/>
+                <Navbar />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/*' element={<Error />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </>
     )

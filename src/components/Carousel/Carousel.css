@@ -1,0 +1,106 @@
+.swiper{
+   padding-bottom: 3rem; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--green-color); 
+  position: absolute;
+  /* z-index: 100; */
+}
+
+.swiper .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+  background: var(--green-color); 
+  height: 0.6rem;
+  width: 0.6rem;
+}
+
+:root {
+    --primary-color: #0e314c;
+    --secondary-color: #4a6f8a;
+    --green-color: #44ce6f;
+    --grey-bg-color: #f7fafd;
+    --grey-bg-color2: #fcfafa;
+    --white-color: white;
+}
+
+.works_carousel {
+    margin-top: 3rem;
+}
+
+.works_img img {
+    width: 100%;
+}
+
+.works_img {
+    position: relative;
+}
+
+.works_img .icon {
+    position: absolute;
+    top: 0.4rem;
+    right: 1.4rem;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.4s;
+}
+
+.works_img .icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.works_img:hover .icon {
+    top: 1.4rem;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.works_img .works_content p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+.works_img .works_content {
+    position: absolute;
+    bottom: -0.4rem;
+    left: 1rem;
+    opacity: 0;
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.works_img:hover .works_content {
+    bottom: 1rem;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.works_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.works_img:hover::before {
+    background-color: #2dd2a4;
+    opacity: 80%;
+    transition: all ease-in-out 0.3s;
+}

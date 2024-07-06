@@ -1,11 +1,11 @@
 :root {
     --green-color: #44ce6f;
     --primary-color: #4a6f8a;
-
+    --button-color: rgb(205, 41, 205);
 }
 
 button {
-    background-color: rgb(205, 41, 205);
+    background-color: var(--button-color);
     padding: 0.7rem 2rem;
     font-weight: 600;
     outline: none;
@@ -55,6 +55,7 @@ button:hover {
     transform: translateY(-5px);
     transition: all ease-in-out 0.4s;
 }
+
 
 .btn2 {
     background-color: white;
