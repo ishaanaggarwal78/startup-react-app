@@ -6,9 +6,12 @@ import Cards, { Cards2 } from '../../components/Cards/Cards';
 import { BsHddStack } from "react-icons/bs";
 import Bar from '../../components/Bar/Bar';
 import Background from '../../components/Background/Background';
+
 import cross from '../../assets/img/cross-shape.svg'
 import cross2 from '../../assets/img/cross-shape.svg'
 import circle from '../../assets/img/circle-shape.png'
+import triangle1 from '../../assets/img/triangle-1.svg'
+import abstract from '../../assets/img/abstract.png'
 
 import MySwiperComponent from '../../components/Carousel/Carousel';
 import TeamCarousel from '../../components/Carousel/TeamCarousel';
@@ -21,7 +24,7 @@ const Home = () => {
             {/* ============================================ HERO ============================================= */}
 
             <section className="hero_section sections">
-                <Background crossImg={cross} crossImg2={cross2} circleImg={circle} />
+                <Background crossImg={cross} crossImg2={cross2} circleImg={circle} triangleImg={triangle1}triangleImg2={triangle1} abstractImg={abstract}/>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -32,7 +35,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img src={heroImage} alt="Error uploading" className='img-fluid' />
+                            <img src={heroImage} alt="Error uploading" className='hero_img img-fluid' />
                         </div>
                     </div>
 
@@ -209,7 +212,6 @@ const Home = () => {
             {/* ============================================ RECENT WORKS ============================================= */}
 
             <section className="recent_works sections">
-                <Background />
                 <div className="container">
                     <div className="row">
                         <div className="sections_head">
@@ -225,6 +227,8 @@ const Home = () => {
             </section>
 
             {/* ============================================ HEADING ============================================= */}
+
+            
         </>
     )
 }

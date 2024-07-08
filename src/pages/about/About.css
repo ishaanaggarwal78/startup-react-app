@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #0e314c;
+    --secondary-color: #4a6f8a;
+    --green-color: #44ce6f;
+    --grey-bg-color: #f7fafd;
+    --grey-bg-color2: #fcfafa;
+    --white-color: white;
+}
+
+.pages_top {
+    position: relative;
+    height: 50vh;
+    text-align: center;
+}
+
+.pages_top h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: 700;
+}
+
+.pages_top .main_bg .bacol {
+    height: 50vh;
+}
+
+.cross_shape img {
+    top: 230px;
+    left: 20%;
+}
+
+.cross_shape2 img {
+    top: 90px;
+    right: 20%;
+}
+
+.circle_shape .inner img {
+    top: 50px;
+}
+
+.triangle_2 img {
+    position: absolute;
+    top: 200px;
+    right: 4%;
+    animation: tri2 15s linear forwards infinite;
+    z-index: -1;
+}
+
+
+.abstract img {
+    top: 20px;
+}

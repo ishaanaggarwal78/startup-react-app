@@ -1,13 +1,26 @@
 .main_bg {
     position: relative;
-    z-index: 10;
+    width: 100%;
+    z-index: -20;
+}
+
+.main_bg .bacol {
+    position: absolute;
+    /* background: url('D:\CODING\react projects\startup\startup\src\assets\img\hero-banner.jpg'); */
+    background-size: cover;
+    background: transparent url('D:\CODING\react projects\startup\startup\src\assets\img\hero-banner.jpg') 100% 0 no-repeat;
+    object-fit: cover;
+    /* background-position-x: -10px; */
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
 }
 
 /* ============================================= CROSS ============================================= */
 
 .cross_shape img {
     position: absolute;
-    top: 350px;
+    top: 450px;
     left: 30%;
     animation: cross 6s linear forwards infinite;
     z-index: -1;
@@ -23,7 +36,7 @@
 
 .cross_shape2 img {
     position: absolute;
-    top: -30px;
+    top: 100px;
     right: 10%;
     animation: cross 6s linear forwards infinite;
     z-index: -1;
@@ -41,8 +54,9 @@
     position: absolute;
     top: 0;
     animation: circle 4s linear forwards infinite;
-    z-index: -10;
+    z-index: -1;
     left: 30px;
+    opacity: 40%;
 }
 
 
@@ -51,3 +65,76 @@
         transform: rotate3d(0, 1, 0, 360deg);
     }
 }
+
+/* ============================================= TRIANGLE 1 ============================================= */
+
+.triangle_1 img {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    animation: tri 15s linear forwards infinite;
+    z-index: -1;
+}
+
+@keyframes tri {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+
+    60% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+.triangle_2 img {
+    position: absolute;
+    top: 400px;
+    right: 4%;
+    animation: tri2 15s linear forwards infinite;
+    z-index: -1;
+}
+
+@keyframes tri2 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================= ABSTRACT ============================================= */
+
+.abstract img{
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    opacity: 40%;
+    animation: abstract 8s linear forwards infinite;
+}
+
+@keyframes abstract {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

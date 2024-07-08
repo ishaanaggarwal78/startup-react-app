@@ -41,12 +41,11 @@
 
 .hero_section {
     padding-bottom: 2rem;
-
+    padding-top: 0;
 }
 
 .hero_content {
-    padding-top: 6rem;
-    position: relative;
+    padding-top: 16rem;
     z-index: 10;
 }
 
@@ -64,13 +63,32 @@
     transform: translate(0);
 }
 
-.hero_section .main_bg .circle_shape .inner img {
-    position: absolute;
-    top: 30%;
-    left: 100px;
-    z-index: -200;
+.hero_img {
+    margin-top: 5rem;
 }
 
+.hero_section .main_bg .bacol {
+    height: 120vh;
+}
+
+/* ===================================== SHAPES ===================================== */
+
+.hero_section .main_bg .circle_shape .inner img {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    z-index: 200;
+}
+
+.hero_section .cross_shape img {
+    top: 28rem;
+    left: 30%;
+}
+
+.hero_section .cross_shape2 img {
+    top: 4rem;
+    right: 10%;
+}
 
 /* ============================================= SERVICES ============================================= */
 

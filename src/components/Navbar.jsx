@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css';
-import {Button1} from './Buttons/Button1';
-import {Button2} from './Buttons/Button2';
+import { Button1 } from './Buttons/Button1';
+import { Button2 } from './Buttons/Button2';
 
 const Navbar = () => {
     return (
@@ -32,8 +32,8 @@ const Navbar = () => {
                                 </li>
                             </ul>
                             <div className="nav_btns">
-                                <Button2/>
-                                <Button1/>
+                                <Button2 />
+                                <Button1 />
                             </div>
                         </div>
                     </nav>
