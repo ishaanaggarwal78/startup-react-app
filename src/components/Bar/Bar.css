@@ -22,7 +22,7 @@
     background-color: var(--green-color);
     border-radius: 100%;
     animation-name: 'bar';
-    animation: bar 2.6s infinite alternate linear;
+    animation: bar 2.8s infinite alternate linear;
 }
 
 @keyframes bar {

@@ -5,8 +5,7 @@ import TitleBackground from '../../components/Background/TitleBackground'
 const Services = () => {
   return (
     <>
-      <TitleBackground heading='Services'/>
-      <h1>Hello</h1>
+      <TitleBackground heading='Services' />
     </>
   )
 }

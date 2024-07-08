@@ -1,13 +1,20 @@
-:root{
+:root {
     --primary-color: #0e314c;
     --secondary-color: #4a6f8a;
-    --green-color: #44ce6f; 
+    --green-color: #44ce6f;
 
 }
 
 header {
     /* background-color: coral; */
     background-color: transparent;
+}
+
+nav.sticky {
+    background-color: white;
+    box-shadow: 0 -24px 25px 10px grey;
+    transition: all ease-in-out 0.3s;
+    padding-bottom: 15px;
 }
 
 nav {
@@ -18,12 +25,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     width: 100%;
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 0 7rem;
+    padding-top: 15px;
+    transition: all ease-in-out 0.3s;
 }
 
 nav .nav_logo h2 {
@@ -36,7 +44,7 @@ nav .nav_links {
     align-items: center;
 }
 
-nav .nav_links ul{
+nav .nav_links ul {
     margin: 0;
     padding-right: 1.5rem;
 }
@@ -59,7 +67,7 @@ nav .nav_links ul li a:hover {
     transition: all ease-in-out 0.3s;
 }
 
-nav .nav_links .nav_btns{
+nav .nav_links .nav_btns {
     display: flex;
     gap: 1rem;
 }

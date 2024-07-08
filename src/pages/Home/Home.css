@@ -19,6 +19,10 @@
     margin-left: calc(50% - 25%);
 }
 
+.sections .heading_content p {
+    padding-top: 1rem;
+}
+
 .sections .sections_head p {
     color: var(--secondary-color);
     font-size: 0.9rem;
@@ -27,6 +31,8 @@
 
 .sections .sections_head h2 {
     color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
 }
 
 .sections p {
@@ -34,7 +40,11 @@
 }
 
 .sections .sections_head .bar {
-    margin-left: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    margin-top: 0;
 }
 
 /* ============================================= HERO ============================================= */
@@ -65,10 +75,11 @@
 
 .hero_img {
     margin-top: 5rem;
+    width: 90%;
 }
 
 .hero_section .main_bg .bacol {
-    height: 120vh;
+    height: 100vh;
 }
 
 /* ===================================== SHAPES ===================================== */
@@ -93,6 +104,13 @@
 /* ============================================= SERVICES ============================================= */
 
 
+.hosting_services {
+    background-color: var(--grey-bg-color);
+    padding: 4rem 0;
+    margin-top: 2rem;
+    position: relative;
+}
+
 .hosting_services h2 {
     color: var(--primary-color);
 }
@@ -104,10 +122,26 @@
     padding-top: 1rem;
 }
 
-.hosting_services {
-    background-color: var(--grey-bg-color);
-    padding: 4rem 0;
-    margin-top: 4rem;
+.hosting_services .hosting_img img {
+    width: 65%;
+    margin-left: 8rem;
+}
+
+.rotate_img {
+    position: absolute;
+    top: 52px;
+    right: 28px;
+    width: 50%;
+}
+
+.rotate_img img {
+    animation: rotateImg 15s linear infinite;
+}
+
+@keyframes rotateImg {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .services_blocks {
@@ -149,7 +183,30 @@
 
 .designDev {
     background-color: var(--white-color);
+    position: relative;
+    padding: 6rem 0;
 }
+
+
+.design_img .bgImg1 {
+    position: relative;
+    width: 60%;
+    margin-left: 5rem;
+    z-index: 10;
+}
+
+.rotate_img_2 {
+    position: absolute;
+    top: 40px;
+    left: 115px;
+    width: 55%;
+}
+
+.rotate_img_2 img {
+    animation: rotateImg 15s linear infinite;
+}
+
+
 
 /* ============================================= FEATURES ============================================= */
 
@@ -210,6 +267,28 @@
 
 
 .recent_works {
-    background-color: var(--grey-bg-color);
+    /* background-color: var(--grey-bg-color); */
     margin-bottom: 5rem;
+}
+
+/* ============================================= TESTIMONIALS ============================================= */
+
+.testimonials {
+    background-color: var(--grey-bg-color);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.testimonials .main_bg {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.testimonials .main_bg .bacol {
+    background: none;
+}
+
+.testimonials .main_bg .cross_shape img{
+    left: 150px;
 }

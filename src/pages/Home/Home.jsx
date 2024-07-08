@@ -1,6 +1,10 @@
 import React from 'react'
 import './Home.css';
-import heroImage from '../../assets/img/hero.jpg'
+import heroImage from '../../assets/img/bg-img.png'
+import bgImg1 from '../../assets/img/bg-img-1.png'
+import bgImg2 from '../../assets/img/bg-img-2.png'
+import rotateImg from '../../assets/img/bg-rotate-img.png'
+
 import Button1 from '../../components/Buttons/Button1';
 import Cards, { Cards2 } from '../../components/Cards/Cards';
 import { BsHddStack } from "react-icons/bs";
@@ -15,6 +19,7 @@ import abstract from '../../assets/img/abstract.png'
 
 import MySwiperComponent from '../../components/Carousel/Carousel';
 import TeamCarousel from '../../components/Carousel/TeamCarousel';
+import TestimonialCarousel from '../../components/Carousel/TestimonialCarousel';
 
 
 
@@ -24,7 +29,7 @@ const Home = () => {
             {/* ============================================ HERO ============================================= */}
 
             <section className="hero_section sections">
-                <Background crossImg={cross} crossImg2={cross2} circleImg={circle} triangleImg={triangle1}triangleImg2={triangle1} abstractImg={abstract}/>
+                <Background crossImg={cross} crossImg2={cross2} circleImg={circle} triangleImg={triangle1} triangleImg2={triangle1} abstractImg={abstract} />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -58,7 +63,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="services_content">
+                            <div className="heading_content">
                                 <h2>Cloud Hosting Services</h2>
                                 <Bar />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam perspiciatis ex porro enim modi sit numquam impedit molestias nam?</p>
@@ -76,7 +81,12 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-
+                            <div className="hosting_img">
+                                <img src={bgImg2} alt="" />
+                                <div className="rotate_img">
+                                    <img src={rotateImg} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,11 +98,17 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-
+                            <div className="design_img">
+                                <img src={bgImg1} alt="" className='bgImg1' />
+                                <div className="rotate_img_2">
+                                    <img src={rotateImg} alt="" />
+                                </div>
+                            </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="services_content">
-                                <h2>Cloud Hosting Services</h2>
+                            <div className="heading_content">
+                                <h2>Design & Development</h2>
+                                <Bar />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam perspiciatis ex porro enim modi sit numquam impedit molestias nam?</p>
 
                                 <div className="services_blocks">
@@ -226,9 +242,25 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* ============================================ HEADING ============================================= */}
+            {/* ============================================ TESTIMONIALS ============================================= */}
 
-            
+            <section className="testimonials sections">
+                <Background crossImg={cross} crossImg2={cross2} circleImg={circle} triangleImg={triangle1} triangleImg2={triangle1} abstractImg={abstract} />
+                <div className="container">
+                    <div className="row">
+                        <div className="sections_head">
+                            <h2>What users saying</h2>
+                            <Bar />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda incidunt repellendus! Ab aperiam nesciunt natus voluptates.</p>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <TestimonialCarousel />
+                    </div>
+                </div>
+            </section>
+
         </>
     )
 }

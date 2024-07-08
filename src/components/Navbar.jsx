@@ -5,6 +5,12 @@ import { Button1 } from './Buttons/Button1';
 import { Button2 } from './Buttons/Button2';
 
 const Navbar = () => {
+    
+    window.addEventListener("scroll", function () {
+        let nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 100);
+    });
+
     return (
         <>
             <header>
@@ -22,13 +28,13 @@ const Navbar = () => {
                                     <NavLink to='/about'>About</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/'>Services</NavLink>
+                                    <NavLink to='/services'>Services</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/about'>Contact</NavLink>
+                                    <NavLink to='/contact'>Contact</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/about'>Projects</NavLink>
+                                    <NavLink to='/projects'>Projects</NavLink>
                                 </li>
                             </ul>
                             <div className="nav_btns">

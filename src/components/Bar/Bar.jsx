@@ -4,7 +4,7 @@ import './Bar.css'
 const Bar = () => {
   return (
     <div className='bar'>
-        
+
     </div>
   )
 }

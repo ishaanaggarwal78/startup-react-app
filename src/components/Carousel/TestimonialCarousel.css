@@ -1,0 +1,68 @@
+:root {
+    --green-color: #44ce6f;
+    --button-color: rgb(205, 41, 205);
+    --primary-green: #2dd2a4;
+    --secondary-color: #4a6f8a;
+}
+
+.Swiper {
+    padding: 3rem;
+}
+
+.testimonial_block {
+    background-color: white;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    transition: all ease-in-out .3s;
+    box-shadow: -8px 8px 25px -18px rgba(0, 0, 0, 0.11);
+}
+
+.testimonial_block:hover {
+    box-shadow: -8px 8px 25px -18px rgba(0, 0, 0, 0.407);
+    transition: all ease-in-out .3s;
+}
+
+.testimonial_block:hover .user_img img {
+    border: 3px solid var(--green-color);
+    transition: all ease-in-out .3s;
+}
+
+
+.user_img img {
+    border: 3px solid #44ce702d;
+    border-radius: 100%;
+    transition: all ease-in-out .3s;
+}
+
+.user_img {
+    text-align: center;
+}
+
+.user_img h5 {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.user_img p {
+    color: var(--button-color);
+}
+
+.user_feedback {
+    padding-left: 2rem;
+    color: var(--secondary-color);
+}
+
+.user_rating {
+    padding-top: 0.8rem;
+}
+
+.user_rating svg {
+    font-size: 1.4rem;
+    color: gold;
+    /* filter: drop-shadow(-1.5px 1.5px 1px rgba(255, 194, 27, 0.981)); */
+    padding-right: 4px;
+}
