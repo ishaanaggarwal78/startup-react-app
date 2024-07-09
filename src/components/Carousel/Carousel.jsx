@@ -32,7 +32,7 @@ const MySwiperComponent = () => {
             pagination={{ clickable: true }}
             breakpoints={{
                 425: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 768: {

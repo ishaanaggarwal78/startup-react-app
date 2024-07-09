@@ -1,11 +1,6 @@
 /* ============================================= 1024px ============================================= */
 
 @media (max-width:1024px) {
-    nav {
-        padding: 0 2rem;
-        padding-top: 15px;
-    }
-
     .hero_content {
         padding-top: 10rem;
         padding-bottom: 6rem;
@@ -49,7 +44,7 @@
     }
 
     .feedback_main .testimonial_block .user_feedback {
-        padding-top: 1rem;
+        padding: 1.6rem;
     }
 }
 
@@ -67,21 +62,13 @@
         width: 10%;
     }
 
-    nav .nav_ul {
-        display: none;
-    }
-
-    nav .nav_btns button {
-        padding: 0 1.4rem;
-        height: 2.4rem;
-    }
-
     .hero_content {
         padding-bottom: 0;
     }
 
     .hero_img {
         margin: 0 0 2rem 2rem;
+        margin-left: 0;
     }
 
     .main_cards {
@@ -181,15 +168,123 @@
         display: flex;
     }
 
+    .feedback_main .testimonial_block .user_feedback {
+        padding: 0;
+        padding-left: 2rem;
+    }
+
     footer .footer {
         margin-top: 3rem;
         padding-top: 2rem;
     }
 
-    .footer .footer_second{
+    .footer .footer_second {
         padding-left: 0;
     }
-    .footer .footer_fourth{
+
+    .footer .footer_fourth ul{
         padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+
+    .footer .footer_links {
+        padding-top: 0.4rem;
+    }
+}
+
+/* ============================================= 425px ============================================= */
+
+@media (max-width:426px) {
+    .sections {
+        padding: 3rem 0;
+    }
+
+    .sections .sections_head {
+        text-align: center;
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+
+    .sections .sections_head .bar {
+        transform: translate(-50%, -50%);
+        width: 20%;
+    }
+
+    .hero_content {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .hosting_services .hosting_img img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .rotate_img img {
+        display: none;
+    }
+
+    .design_img {
+        margin-bottom: 2rem;
+    }
+
+    .design_img .bgImg1 {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .rotate_img_2 {
+        display: none;
+    }
+
+    .our_team .team_carousel .team_img img {
+        width: 40%;
+    }
+
+    .our_team .team_carousel {
+        padding: 3rem 1rem;
+    }
+
+    /* 
+    .counter_main .row.figures_main{
+        width: 40%;
+        display: flex;
+    } */
+
+    .counter_main .counter_contact {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin-left: calc(50% - 45%);
+    }
+
+    .counter_main .counter_contact button {
+        margin-top: 1rem;
+    }
+
+    .recent_works {
+        padding-top: 2rem;
+    }
+
+    .feedback_main .testimonial_block {
+        padding: 2.4rem 0.4rem;
+        display: block;
+    }
+
+    .feedback_main .testimonial_block .user_feedback {
+        padding: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .footer .footer_first {
+        padding-bottom: 1rem;
+    }
+
+    .footer .footer_fourth {
+        padding-bottom: 2rem;
+    }
+
+    .footer .footer_links {
+        padding-bottom: 0.6rem;
     }
 }

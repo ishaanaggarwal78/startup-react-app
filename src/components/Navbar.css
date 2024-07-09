@@ -72,7 +72,44 @@ nav .nav_links .nav_btns {
     gap: 1rem;
 }
 
-.sidebar_icon svg{
+.sidebar_icon svg {
     font-size: 1.8rem;
     margin-left: 2rem;
+}
+
+/* ============================================= MEDIA ============================================= */
+
+@media (max-width:1024px) {
+    nav {
+        padding: 0 2rem;
+        padding-top: 15px;
+    }
+
+    nav .sidebar_icon {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    nav .nav_ul {
+        display: none;
+    }
+
+    nav .nav_btns button {
+        padding: 0 1.4rem;
+        height: 2.4rem;
+    }
+
+    nav .sidebar_icon {
+        display: block;
+    }
+}
+
+@media (max-width:426px) {
+    nav{
+        width: 100%;
+    }
+    nav .nav_links .nav_btns {
+        display: none;
+    }
 }
