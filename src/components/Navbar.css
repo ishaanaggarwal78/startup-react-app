@@ -71,3 +71,8 @@ nav .nav_links .nav_btns {
     display: flex;
     gap: 1rem;
 }
+
+.sidebar_icon svg{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}

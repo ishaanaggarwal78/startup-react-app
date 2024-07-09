@@ -1,5 +1,6 @@
 import React from 'react'
-import './Home.css';
+import '../../assets/css/pages/Home.css';
+import '../../assets/css/MediaQuery/HomeMedia.css';
 import heroImage from '../../assets/img/bg-img.png'
 import bgImg1 from '../../assets/img/bg-img-1.png'
 import bgImg2 from '../../assets/img/bg-img-2.png'
@@ -46,10 +47,13 @@ const Home = () => {
 
                     <div className="main_cards">
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 col-md-6">
                                 <Cards icon={<BsHddStack />} heading='Zero Configuration' content='Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.' />
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 col-md-6">
+                                <Cards icon={<BsHddStack />} heading='Zero Configuration' content='Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.' />
+                            </div>
+                            <div className="col-lg-3 col-md-6">
                                 <Cards icon={<BsHddStack />} heading='Zero Configuration' content='Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.' />
                             </div>
                         </div>
@@ -70,10 +74,16 @@ const Home = () => {
 
                                 <div className="services_blocks">
                                     <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 col-md-6">
                                             <Cards icon={<BsHddStack />} content='Cloud Database' />
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 col-md-6">
+                                            <Cards icon={<BsHddStack />} content='Website Hosting' />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <Cards icon={<BsHddStack />} content='Website Hosting' />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
                                             <Cards icon={<BsHddStack />} content='Website Hosting' />
                                         </div>
                                     </div>
@@ -113,10 +123,16 @@ const Home = () => {
 
                                 <div className="services_blocks">
                                     <div className="row">
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 col-md-6">
                                             <Cards icon={<BsHddStack />} content='Cloud Database' />
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="col-lg-6 col-md-6">
+                                            <Cards icon={<BsHddStack />} content='Website Hosting' />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <Cards icon={<BsHddStack />} content='Website Hosting' />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
                                             <Cards icon={<BsHddStack />} content='Website Hosting' />
                                         </div>
                                     </div>
@@ -141,13 +157,13 @@ const Home = () => {
                     </div>
                     <div className="features_blocks">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6">
                                 <Cards2 icon={<BsHddStack />} heading='Incredible Infrastructure' content='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam error ratione recusandae laboriosam autem dolorum modi quibusdam amet cum.' />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6">
                                 <Cards2 icon={<BsHddStack />} heading='Incredible Infrastructure' content='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam error ratione recusandae laboriosam autem dolorum modi quibusdam amet cum.' />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6">
                                 <Cards2 icon={<BsHddStack />} heading='Incredible Infrastructure' content='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam error ratione recusandae laboriosam autem dolorum modi quibusdam amet cum.' />
                             </div>
                         </div>
@@ -184,26 +200,26 @@ const Home = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda incidunt repellendus! Ab aperiam nesciunt natus voluptates.</p>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg d-flex justify-content-center">
+                    <div className="row figures_main">
+                        <div className="col-lg-3 col-md-3 d-flex justify-content-center">
                             <div className="figures">
                                 <h2>180K</h2>
                                 <p>Downloaded</p>
                             </div>
                         </div>
-                        <div className="col-lg d-flex justify-content-center">
+                        <div className="col-lg-3 col-md-3 d-flex justify-content-center">
                             <div className="figures">
                                 <h2>20K</h2>
                                 <p>Feedback</p>
                             </div>
                         </div>
-                        <div className="col-lg d-flex justify-content-center">
+                        <div className="col-lg-3 col-md-3 d-flex justify-content-center">
                             <div className="figures">
                                 <h2>500K +</h2>
                                 <p>Workers</p>
                             </div>
                         </div>
-                        <div className="col-lg d-flex justify-content-center">
+                        <div className="col-lg-3 col-md-3 d-flex justify-content-center">
                             <div className="figures">
                                 <h2>70 +</h2>
                                 <p>Contributors</p>

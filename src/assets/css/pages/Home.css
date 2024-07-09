@@ -145,7 +145,7 @@
 }
 
 .services_blocks {
-    margin-top: 2.4rem;
+    margin-top: 1.2rem;
 }
 
 .services_blocks .cards {
@@ -154,6 +154,7 @@
     align-items: center;
     box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.125);
     border-radius: 3px;
+    margin-top: 1rem;
 }
 
 .services_blocks .cards:hover {
@@ -205,6 +206,7 @@
 .rotate_img_2 img {
     animation: rotateImg 15s linear infinite;
 }
+
 
 
 
@@ -268,7 +270,6 @@
 
 .recent_works {
     /* background-color: var(--grey-bg-color); */
-    margin-bottom: 5rem;
 }
 
 /* ============================================= TESTIMONIALS ============================================= */
@@ -289,6 +290,6 @@
     background: none;
 }
 
-.testimonials .main_bg .cross_shape img{
+.testimonials .main_bg .cross_shape img {
     left: 150px;
 }

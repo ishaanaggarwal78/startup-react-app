@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.css';
 import { Button1 } from './Buttons/Button1';
 import { Button2 } from './Buttons/Button2';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-    
+
     window.addEventListener("scroll", function () {
         let nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 100);
@@ -40,6 +41,9 @@ const Navbar = () => {
                             <div className="nav_btns">
                                 <Button2 />
                                 <Button1 />
+                            </div>
+                            <div className="sidebar_icon">
+                                <GiHamburgerMenu />
                             </div>
                         </div>
                     </nav>

@@ -1,0 +1,195 @@
+/* ============================================= 1024px ============================================= */
+
+@media (max-width:1024px) {
+    nav {
+        padding: 0 2rem;
+        padding-top: 15px;
+    }
+
+    .hero_content {
+        padding-top: 10rem;
+        padding-bottom: 6rem;
+    }
+
+    .hosting_services {
+        margin-top: 6rem;
+    }
+
+    .hosting_services .hosting_img img {
+        width: 75%;
+        margin-left: 3rem;
+    }
+
+    .hosting_img .rotate_img img {
+        margin-left: 2.9rem;
+        width: 80%;
+    }
+
+    .design_img .bgImg1 {
+        width: 70%;
+        margin-left: 4rem;
+    }
+
+    .rotate_img_2 img {
+        width: 75%;
+        margin-left: -4rem;
+    }
+
+    .our_team .team_carousel {
+        padding: 3rem 1rem;
+    }
+
+    .team_carousel .team_img img {
+        width: 60%;
+    }
+
+    .feedback_main .testimonial_block {
+        padding: 2rem 1rem;
+        display: block;
+    }
+
+    .feedback_main .testimonial_block .user_feedback {
+        padding-top: 1rem;
+    }
+}
+
+/* ============================================= 768px ============================================= */
+
+@media (max-width:768px) {
+    .sections .sections_head {
+        text-align: center;
+        width: 70%;
+        margin-left: calc(50% - 35%);
+    }
+
+    .sections .sections_head .bar {
+        transform: translate(-50%, -50%);
+        width: 10%;
+    }
+
+    nav .nav_ul {
+        display: none;
+    }
+
+    nav .nav_btns button {
+        padding: 0 1.4rem;
+        height: 2.4rem;
+    }
+
+    .hero_content {
+        padding-bottom: 0;
+    }
+
+    .hero_img {
+        margin: 0 0 2rem 2rem;
+    }
+
+    .main_cards {
+        margin-top: 0;
+    }
+
+    .main_cards .cards {
+        margin-top: 1.6rem;
+    }
+
+    .hosting_services {
+        margin-top: 2rem;
+    }
+
+    .hosting_img {
+        display: grid;
+        place-items: center;
+        position: relative;
+        z-index: 20;
+    }
+
+    .hosting_services .hosting_img img {
+        position: relative;
+        width: 60%;
+        margin-top: 1rem;
+        z-index: 20;
+    }
+
+    .rotate_img {
+        width: 100%;
+    }
+
+    .rotate_img img {
+        position: absolute;
+        left: 140px;
+        top: -20px;
+    }
+
+    .designDev {
+        padding-bottom: 4rem;
+    }
+
+    .design_img {
+        position: relative;
+        display: grid;
+        place-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .design_img .bgImg1 {
+        width: 50%;
+    }
+
+    .rotate_img_2 {
+        width: 80%;
+    }
+
+    .design_img .rotate_img_2 img {
+        position: absolute;
+        top: -70px;
+        left: 115px;
+    }
+
+    .features_blocks .cards2 {
+        display: block;
+    }
+
+    .features_blocks .cards2 .cards_icon {
+        margin-bottom: 1rem;
+    }
+
+    .our_team .team_carousel {
+        padding: 2rem 1rem;
+    }
+
+    .counter_main {
+        padding-bottom: 2rem;
+    }
+
+    .counter_main .figures_main {
+        padding-top: 1rem;
+    }
+
+    .counter_main .counter_contact {
+        padding: 1.8rem;
+        width: 80%;
+        margin-left: calc(50% - 40%);
+        margin-top: 2rem;
+    }
+
+    .testimonials {
+        padding-bottom: 3rem;
+    }
+
+    .feedback_main .testimonial_block {
+        padding: 2.4rem;
+        display: flex;
+    }
+
+    footer .footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+
+    .footer .footer_second{
+        padding-left: 0;
+    }
+    .footer .footer_fourth{
+        padding-bottom: 2rem;
+    }
+}

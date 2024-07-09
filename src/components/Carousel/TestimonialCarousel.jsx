@@ -30,6 +30,16 @@ const TestimonialCarousel = () => {
                 slidesPerView={2}
                 navigation
                 pagination={{ clickable: true }}
+                breakpoints={{
+                    425: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                }}
                 // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
